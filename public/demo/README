@@ -1,0 +1,26 @@
+CK-Lister
+------------------------------------------------------------------
+Directory Lister is a simple PHP based script created to let you list the
+contents of a directory and all sub directories and allow you to navigate
+there within.  Just download and install Directory Lister to any web
+directory and have immediate access to all files and sub-direcories under
+that directory.
+
+
+Installation
+------------------------------------------------------------------
+To install CK-Lister, simply upload index.php and the ck-lister folder to
+the directory that you would like to have listed.
+
+
+Copyright (C) 2009 Chris Kankiewicz <Chris@ChrisKankiewicz.com>
+------------------------------------------------------------------
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.

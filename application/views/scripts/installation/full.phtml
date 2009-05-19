@@ -1,0 +1,55 @@
+<h1>Full Installation Tutorial</h1>
+<p>This installation tutorial will provide a detailed explanation of how to install Directory Lister to your web server.</p>
+<div class="hr"><hr /></div>
+
+<h2>Software you will need</h2>
+<p>Before getting started, you will need to download and install an FTP client.  Here are a few free ones I know of:</p>
+<ul class="bulleted-list">
+	<li><a href="http://winscp.net/eng/download.php" target="_blank">WinSCP</a></li>
+	<li><a href="http://filezilla-project.org/download.php?type=client" target="_blank">Filezilla</a></li>
+	<li><a href="http://fireftp.mozdev.org" target="_blank">FireFTP</a> (Requires Firefox)</li>
+	<li><a href="http://www.smartftp.com/download/" target="_blank">SmartFTP</a></li>
+</ul>
+<p>This tutorial will assume you are using WinSCP with the Explorer interface, but the same general ideas work with all FTP clients.</p>
+
+
+<div class="hr"><hr /></div>
+
+<h2>Step 1 - Download latest version</h2>
+<p>Click the "Download Directory Lister" button at the top right of this page to download the latest version of Directoty Lister.</p>
+
+<br />
+
+<h2>Step 2 - Extract files</h2>
+<p>Right click on directory-lister-latest.zip and select "Extract All..."</p>
+<center><img class="border" src="/images/install/extract-1.png" /></center>
+<p>On the Extraction Wizard welcome screen hit Next</p>
+<center><img class="border" src="/images/install/extract-2.png" /></center>
+<p>If you wish to extract to a different location, browse for that location, then hit Next. Otherwise, just hit Next.</p>
+<center><img class="border" src="/images/install/extract-3.png" /></center>
+<p>Make sure the "Show extracted files" is checked and hit Finish.</p>
+<center><img class="border" src="/images/install/extract-4.png" /></center>
+<p>You should now see a folder containing the Directory Lister files.</p>
+<center><img class="border" src="/images/install/folder.png" /></center>
+
+<br />
+
+<h2>Step 3 - Upload Directory Lister files</h2>
+<p>Open WinSCP and connect to your server.</p>
+<p>Navigate to the remote directory you want to list.</p>
+<p>Drag index.php and the .directory-lister folder from the already open folder into the folder in WinSCP.</p>
+<p><small><b>NOTE:</b> For instructions on connecting to a server with WinSCP, <a href="http://winscp.net/eng/docs/ui_login_session" target="_blank">click here</a>.</small></p>
+<center><img class="border" src="/images/install/winscp.png" /></center>
+
+<br/>
+
+<h2>Step 4 - Upload other files</h2>
+<p>Upload any files you would like to be listed to the same directory as index.php.</p>
+<p><small><b>NOTE:</b> Make sure not to overwrite index.php or Directory Lister will not work.</small></p>
+<center><img class="border" src="/images/install/winscp-2.png" /></center>
+
+<br />
+
+<h2>Step 5 - View the page</h2>
+<p>Open your favorite web browser and navigate to your page.  If Directory Lister was properly installed you should see a listing of all containing files/folders.</p>
+<center><img class="border" src="/images/install/view-page.png" /></center>

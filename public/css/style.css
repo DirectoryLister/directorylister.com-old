@@ -1,0 +1,353 @@
+/* --------------------- */
+/* -----[ GENERAL ]----- */
+/* --------------------- */
+
+html {
+	font-size: 100%;
+}
+
+body {
+	color: #333;
+	font-family: sans-serif, Verdana, Tahoma, Sans, Arial, Helvetica;
+	font-size: 1em;
+}
+
+a {
+	color: #3269AA;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.width-constraint {
+	margin: 0 auto;
+	width: 740px;
+	position: relative;
+}
+
+ul.bulleted-list {
+	line-height: 1.3em;
+	list-style: disc;
+}
+
+ul.bulleted-list li {
+	margin-left: 35px;
+}
+
+ol.numbered-list {
+	line-height: 1.3em;
+	list-style: decimal;
+}
+
+ol.numbered-list li {
+	margin-left: 35px;
+}
+
+
+/* -------------------- */
+/* -----[ HEADER ]----- */
+/* -------------------- */
+
+#old-browser {
+	background-color: #A00;
+	color: #FFF;
+	font-size: .8em;
+	padding: 3px 0;
+}
+
+#old-browser a {
+	color: #FFF;
+}
+
+#header {
+	background-color: #222;
+	height: 65px;
+	min-width: 760px;
+}
+
+#header #site-logo img {
+	float: left;
+	margin-top: 17px;
+	width: 241px;
+}
+
+#sub-header {
+	background-color: #DDF;
+	min-width: 760px;
+	padding: 5px 0;
+}
+
+
+/* -------------------- */
+/* -----[ DL-BOX ]----- */
+/* -------------------- */
+
+#download {
+	float: right;
+	margin-top: 7px;
+}
+
+ul.dl-box {
+	list-style: none;
+	margin-left: 20px;
+	padding: 0;
+}
+
+ul.dl-box li {
+	cursor: pointer;
+	margin: 0;
+}
+
+ul.dl-box li:hover {
+}
+
+ul.dl-box li a {
+	background: #555 url('/images/download_arrow.png') no-repeat 3px 5px;
+	color: #9F3;
+	display: inline-block;
+	font-weight: bold;
+	padding: .5em .5em .5em 50px;
+	text-decoration: none;
+}
+
+ul.dl-box a:hover {
+	background-color: #646464;
+	color: #9F3;
+}
+
+ul.dl-box li a img {
+	float: left;
+	border: none;
+	padding-right: 5px;
+}
+
+.updated {
+	font-size: .75em;
+	font-weight: normal;
+	color: #CCC;
+}
+
+.version {
+	/* justify: right; */
+	font-size: 0.75em;
+	font-weight: normal;
+	color: #FFF;
+}
+
+.clear {
+	clear: both;
+	height: 0 !important;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* --------------------- */
+/* -----[ CONTENT ]----- */
+/* --------------------- */
+
+#content-wrapper {
+	height: 100%;
+	min-width: 760px;
+	padding: 20px 0;
+}
+
+#content {
+	height: 100%;
+	float: left;
+	margin-right: 275px;
+	margin-bottom: 20px;
+	width: 465px;
+}
+
+#content h1 {
+	color: #3269AA;
+	font-family: serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+#content h2 {
+	color: #3269AA;
+	font-family: serif;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+#content p {
+	line-height: 1.3em;
+	margin: .8em 0;
+}
+
+#content img.border {
+	background-color: #F0F0F0;
+	border: 1px solid #D8D8D8;
+	padding: 4px;
+}
+
+.go {
+	background: transparent url(/images/icons/bullet_go.png) no-repeat right center;
+	padding-right: 18px;
+}
+
+#feedback-form textarea {
+	width: 350px;
+}
+
+#feedback-form table {
+
+}
+
+#feedback-form table {
+
+}
+
+
+/* ----------------------- */
+/* -----[ RIGHT BAR ]----- */
+/* ----------------------- */
+
+#right-bar {
+	float: right;
+	margin-left: -250px;
+	margin-bottom: 20px;
+	width: 250px;
+	text-align: left;
+}
+
+#right-bar ul {
+	float: right;
+	list-style: none;
+	margin: 0 0 1em;
+	padding: 0;
+	width: 100%;
+}
+
+#right-bar ul li {
+	display: block;
+	float: left;
+	margin: 0 0 4px;
+	width: 100%;
+}
+
+#right-bar ul li a {
+	background-color: #F0F0F0;
+	border: 1px solid #D8D8D8;
+	display: block;
+	padding: 4px 6px;
+	text-decoration: none;
+}
+
+#right-bar ul li a:hover {
+	background-color: #DDF;
+	border: 1px solid #CCE;
+}
+
+#right-bar ul li a img {
+	margin-right: 5px;
+	position: relative;
+	top: 2px;
+}
+
+#right-bar h3 {
+	color: #3269AA;
+	font-family: serif;
+	font-size: 1em;
+	font-weight: bold;
+	margin: .5em 0;
+}
+
+#right-bar p {
+	color: #999;
+	font-size: .75em;
+	margin: 0 0 1em;
+}
+
+#right-bar #github a img {
+	background-color: #DEDEDE;
+	border: none;
+	margin-left: 1em;
+	padding:2px;
+}
+
+#right-bar #github a:hover img {
+	background-color: #369;
+}
+
+#right-bar #social-icons {
+	margin-left: 1em;
+}
+
+
+/* --------------------------- */
+/* -----[ STICKY FOOTER ]----- */
+/* --------------------------- */
+
+html, body, #wrap {height: 100%;}
+
+body > #wrap {height: auto; min-height: 100%;}
+
+#main {padding-bottom: 76px;}  /* must be same height as the footer */
+
+#footer {
+	background-color: #222;
+	clear:both;
+	color: #FFF;
+	font-size: .8em;
+	height: 76px;
+	margin-top: -76px; /* negative value of footer height */
+	min-width: 760px;
+	position: relative;
+}
+
+#footer .left {
+	float: left;
+	margin-top: 1em;
+}
+
+#footer .right {
+	float: right;
+	margin-top: 1em;
+	text-align: right;
+}
+
+
+/* ---------------------------- */
+/* -----[ MISCELLANEOUS ] ----- */
+/* ---------------------------- */
+
+#content div.hr {
+  background-color: #CCC;
+  border: 0;
+  height: 1px;
+  margin: 1em 0;
+  width: 100%;
+}
+
+#content div.hr hr {
+  display: none;
+}
+
+/* CLEAR FIX*/
+.clearfix:after {content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+
+
+
+
+
+
+
