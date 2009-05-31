@@ -206,6 +206,24 @@ ul.dl-box li a img {
 
 }
 
+#browser-list .left {
+	float: left;
+	margin-right: -310px;
+	width: 255px;
+}
+
+#browser-list .right {
+	float: right;
+	margin-left: -165px;
+	text-align: center;
+	width: 200px;
+}
+
+#browser-list img {
+	border: 1px solid #CCC;
+	padding: 1px;
+}
+
 
 /* ----------------------- */
 /* -----[ RIGHT BAR ]----- */
