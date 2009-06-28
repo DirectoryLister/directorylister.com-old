@@ -177,6 +177,19 @@ ul.dl-box li a img {
 	margin-bottom: .5em;
 }
 
+#content h3 {
+	color: #3269AA;
+	font-family: serif;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+#content h4 {
+	font-family: serif;
+	font-weight: bold;
+}
+
 #content p {
 	line-height: 1.3em;
 	margin: .8em 0;
@@ -186,6 +199,10 @@ ul.dl-box li a img {
 	background-color: #F0F0F0;
 	border: 1px solid #D8D8D8;
 	padding: 4px;
+}
+
+#content #gpl {
+	font-size: .9em;
 }
 
 .go {

@@ -14,6 +14,10 @@ class LicenseController extends Zend_Controller_Action
         // action body
     }
 
+    public function fullAction()
+    {
+		// action body
+    }
 
 }
 
