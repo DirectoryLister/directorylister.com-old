@@ -355,6 +355,7 @@ body > #wrap {height: auto; min-height: 100%;}
 
 #ad-wrapper {
 	margin-bottom: 20px;
+	min-width: 748px;
 }
 
 #content div.hr {

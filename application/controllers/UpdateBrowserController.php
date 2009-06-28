@@ -11,7 +11,7 @@ class UpdateBrowserController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
+        $this->view->title = "Update Your Browser";
 
 		if ( strpos($_SERVER['HTTP_USER_AGENT'], 'Gecko') )
 		{

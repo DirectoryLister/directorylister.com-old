@@ -11,12 +11,12 @@ class InstallationController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
+		$this->view->title = "Installation Instructions";
     }
 
     public function fullAction()
     {
-        // action body
+		$this->view->title = "Full Installation Instructions";
     }
 
 

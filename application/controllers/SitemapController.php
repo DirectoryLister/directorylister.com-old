@@ -14,6 +14,8 @@ class SitemapController extends Zend_Controller_Action
         // action body
         $this->vew->layout = false;
 
+        $this->view->title = "Sitemap";
+
         $urls = array(
         	array(
         		'loc' => 'http://www.directorylister.com/',

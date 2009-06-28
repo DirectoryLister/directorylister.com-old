@@ -11,12 +11,12 @@ class LicenseController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
+		$this->view->title = "Licensing Information";
     }
 
     public function fullAction()
     {
-		// action body
+		$this->view->title = "Full License (GPL v3)";
     }
 
 }
