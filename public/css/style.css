@@ -23,7 +23,7 @@ a:hover {
 
 .width-constraint {
 	margin: 0 auto;
-	width: 740px;
+	width: 728px;
 	position: relative;
 }
 
@@ -64,7 +64,7 @@ ol.numbered-list li {
 #header {
 	background-color: #222;
 	height: 65px;
-	min-width: 760px;
+	min-width: 748px;
 }
 
 #header #site-logo img {
@@ -75,7 +75,7 @@ ol.numbered-list li {
 
 #sub-header {
 	background-color: #DDF;
-	min-width: 760px;
+	min-width: 748px;
 	padding: 5px 0;
 }
 
@@ -150,15 +150,14 @@ ul.dl-box li a img {
 
 #content-wrapper {
 	height: 100%;
-	min-width: 760px;
+	min-width: 748px;
 	padding: 20px 0;
 }
 
 #content {
 	height: 100%;
 	float: left;
-	margin-right: 275px;
-	margin-bottom: 20px;
+	margin-right: 263px;
 	width: 465px;
 }
 
@@ -231,9 +230,8 @@ ul.dl-box li a img {
 
 #right-bar {
 	float: right;
-	margin-left: -250px;
-	margin-bottom: 20px;
-	width: 250px;
+	margin-left: -238px;
+	width: 238px;
 	text-align: left;
 }
 
@@ -318,7 +316,7 @@ body > #wrap {height: auto; min-height: 100%;}
 	font-size: .8em;
 	height: 76px;
 	margin-top: -76px; /* negative value of footer height */
-	min-width: 760px;
+	min-width: 748px;
 	position: relative;
 }
 
@@ -337,6 +335,10 @@ body > #wrap {height: auto; min-height: 100%;}
 /* ---------------------------- */
 /* -----[ MISCELLANEOUS ] ----- */
 /* ---------------------------- */
+
+#ad-wrapper {
+	margin-bottom: 20px;
+}
 
 #content div.hr {
   background-color: #CCC;
