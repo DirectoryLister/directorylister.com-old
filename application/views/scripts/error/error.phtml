@@ -1,29 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"; "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd> 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-<head>  
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-  <title>Zend Framework Default Application</title> 
-</head> 
-<body> 
-  <h1>An error occurred</h1> 
-  <h2><?= $this->message ?></h2> 
+<? if ('development' == APPLICATION_ENV): ?>
+	<h1>An unknown error occurred</h1>
+	<h2><?= $this->message ?></h2>
 
-  <? if ('development' == APPLICATION_ENV): ?> 
-  
-  <h3>Exception information:</h3> 
-  <p> 
-      <b>Message:</b> <?= $this->exception->getMessage() ?> 
-  </p> 
+	<h3>Exception information:</h3>
+	<p><b>Message:</b> <?= $this->exception->getMessage() ?></p>
 
-  <h3>Stack trace:</h3> 
-  <pre><?= $this->exception->getTraceAsString() ?> 
-  </pre> 
+	<h3>Stack trace:</h3>
+	<pre><?= $this->exception->getTraceAsString() ?>
+	  </pre>
 
-  <h3>Request Parameters:</h3> 
-  <pre><? var_dump($this->request->getParams()) ?> 
-  </pre> 
-  <? endif ?>
-  
-</body> 
-</html>
-            
+	<h3>Request Parameters:</h3>
+	<pre><? var_dump($this->request->getParams()) ?></pre>
+<? else: ?>
+	<h1>Error 404: Page not Found</h1>
+<!--	<p><b>We accidentally the whole page!</b></p>-->
+	<img src="/images/pacman_404.png" />
+	<p>This may have been caused by one or more of the following:</p>
+	<ul class="bulleted-list">
+		<li>If you typed the URL in manually, you may have made a mistake when typing in in, check the URL and try again.</li>
+		<li>If you were linked to this site from another page, they may have gotten the link wrong or the page may no longer exists.</li>
+		<li>If you used a saved bookmark to get to this page may have moved since you last visited, you may find it elsewhere on the site.</li>
+		<li>Pacman may have mistook the page for Inky, Blinky, Pinky or Clyde.  Please deposit $0.25 to continue.</li>
+	</ul>
+	<p><a href="/" class="go">Return to Directory Lister home page</a></p>
+<? endif ?>
