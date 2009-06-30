@@ -12,6 +12,8 @@ class BrowsersController extends Zend_Controller_Action
     public function indexAction()
     {
 		$this->view->title = "Browser Compatiblity";
+		$this->view->css = '/css/thickbox.css';
+		$this->view->js = '/js/jquery.thickbox.js';
     }
 
 

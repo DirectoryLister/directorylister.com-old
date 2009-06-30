@@ -5,8 +5,10 @@
 <head>
 	<title><?php echo $this->title; ?> - PHP Directory Lister</title>
 	<link rel="stylesheet" type="text/css" href="/css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="/css/thickbox.css" />
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<? if ($this->css): ?>
+		<link rel="stylesheet" type="text/css" href="<?= $this->css ?>" />
+	<? endif; ?>
 
 	<link rel="shortcut icon" href="/images/icons/folder_explore.png" />
 
@@ -14,7 +16,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
 	<script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/jquery.corner.js"></script>
+	<script type="text/javascript" src="/js/jquery.corner.js"></script>
+    <? if ($this->js): ?>
+		<script type="text/javascript" src="<?= $this->js ?>"></script>
+	<? endif; ?>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$('.dl-box li a').corner();
@@ -157,10 +162,6 @@
 		</div>
 	</div>
 </div>
-
-<!-- THICKBOX -->
-<script type="text/javascript" src="/js/jquery.thickbox.js"></script>
-<!-- /THICKBOX -->
 
 <!-- GOOGLE ANALYTICS -->
 <script type="text/javascript">
