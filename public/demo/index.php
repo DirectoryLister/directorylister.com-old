@@ -1,4 +1,4 @@
-<?php // Director Lister v1.0.0 by, Chris Kankiewicz (http://www.directorylister.com)
+<?php // Directory Lister v1.0.3 by, Chris Kankiewicz (http://www.directorylister.com)
 
 // Files and directories that will not be listed
 $hidden = array(
@@ -40,6 +40,7 @@ $fileIcons = array (
 	'js' => 'code.png',
 	'php' => 'code.png',
 	'pl' => 'code.png',
+	'py' => 'code.png',
 	'xhtml' => 'code.png',
 	'xml' => 'code.png',
 
@@ -57,10 +58,12 @@ $fileIcons = array (
 	'xls' => 'excel.png',
 
 // Images
+	'bmp' => 'image.png',
 	'gif' => 'image.png',
 	'jpg' => 'image.png',
 	'jpeg' => 'image.png',
 	'png' => 'image.png',
+	'tga' => 'image.png',
 
 // Scripts
 	'bat' => 'terminal.png',
@@ -76,6 +79,7 @@ $fileIcons = array (
 	'avi' => 'video.png',
 	'mov' => 'video.png',
 	'mp4' => 'video.png',
+	'mpg' => 'video.png',
 	'wmv' => 'video.png',
 	'swf' => 'flash.png',
 
@@ -93,7 +97,7 @@ if (isset($_GET['dir']) && $_GET['dir'] != '') {
 }
 
 // Prevent access to files specified to be hidden
-if (in_array($dir,$hidden)) {
+if (in_array(strtolower($dir),$hidden)) {
 	$dir = './';
 }
 
@@ -105,9 +109,10 @@ if(substr($dir,-1,1) != '/') {
 $path = $path . $dir;
 
 // Prevent access to parent folders
-if (substr_count($path,'../') !== 0
+if (substr_count($path,'.',0,1) !== 0
 || substr_count($path,'<') !== 0
-|| substr_count($path,'>') !== 0) {
+|| substr_count($path,'>') !== 0
+|| substr_count($path,'/',0,1) !== 0) {
 	$path = './';
 }
 
