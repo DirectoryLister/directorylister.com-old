@@ -1,3 +1,4 @@
-# Allow all
 User-agent: *
+Allow: /
+Disallow: /demo
 Sitemap: http://www.directorylister.com/sitemap.xml
