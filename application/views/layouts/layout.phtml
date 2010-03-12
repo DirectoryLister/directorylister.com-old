@@ -1,5 +1,4 @@
-<?php echo $this->doctype(); ?>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -56,7 +55,7 @@
 								<strong>Download Directory Lister</strong>
 								<span class="version">v1.0.4</span>
 								<br/>
-								<span class="updated">Last Updated: <?php echo(date("F jS, Y", filemtime('downloads/directory-lister-latest.zip'))); ?></span>
+								<span class="updated">Last Updated: <?php if (file_exists('/downloads/directory-lister-latest.zip')) { echo(date("F jS, Y", filemtime('/downloads/directory-lister-latest.zip'))); } else { echo('UNKNOWN'); } ?></span>
 							</a>
 						</li>
 					</ul>
